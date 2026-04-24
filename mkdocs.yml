@@ -1,0 +1,34 @@
+# Site information
+site_name: DegraTwin Documentation
+site_url: https://TEXTaiLES.github.io/DegraTwin-documentation/
+site_author: Elissavet Batziou
+site_description: Documentation page for the DegraTwin Digital Twin Tool
+
+repo_url: https://github.com/TEXTaiLES/DegraTwin
+repo_name: TEXTaiLES/DegraTwin
+
+
+# Copyright
+copyright: Copyright &copy; 2025 TEXTaiLES
+
+# Config
+theme:
+  name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+ # logo: assets/my-logo.png
+ # favicon: assets/my-logo.png
+
+# Extra
+extra:
+  social: 
+    - icon: fontawesome/brands/github
+      link: https://github.com/TEXTaiLES
+
+# Page
+nav:
+  - Home: index.md
+  - Installation: install.md
+  - Usage: use.md
+  - Information: info.md
