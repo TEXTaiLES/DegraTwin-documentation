@@ -1,41 +1,79 @@
-### `docs/use.md`
-
-```md
 # Usage
 
-## Application flow
+This page explains how to use the DegraTwin application to run a textile degradation simulation.
 
-### Step 1: Select simulation parameters
+---
 
-The user selects the simulation settings from the sidebar:
+## 1. Select simulation parameters
 
-- Fabric type: Cotton, Silk, or Wool
-- Projection years
-- Harm component weights
-- Light background option
-- Dose limit
-- API data option
-- Number of fallback sample points
+Use the sidebar to configure the simulation.
 
-### Step 2: Load data
+### Fabric type
 
-Click **Load data**.
+Choose the textile material:
 
-If API data is enabled, the application retrieves sensor readings and processes them.
+- Cotton
+- Silk
+- Wool
 
-If the API request fails, the application switches to fallback sample data.
+### Projection years
 
-### Step 3: Run simulation
+Select how many years the degradation simulation should cover.
+
+### Harm component weights
+
+Adjust the importance of each degradation factor:
+
+- Mechanical harm
+- Chemical harm
+- Biological harm
+- Light-related harm
+
+### Light background option
+
+Choose whether light exposure should be ignored or evaluated against a black or white background.
+
+### Dose limit
+
+Set the dose threshold used in the simulation.
+
+---
+
+## 2. Load data
+
+Click **Load data** to import environmental sensor data.
+
+If API data is enabled, the application retrieves humidity and temperature readings from the external data source.
+
+If the API request fails, the application automatically switches to fallback sample data.
+
+---
+
+## 3. Run the simulation
 
 Click **Run simulation**.
 
-The application computes the average temperature and runs the full degradation simulation.
+The application will:
 
-### Step 4: View outputs
+- calculate the average temperature
+- evaluate the environmental conditions
+- simulate degradation scenarios
+- generate plots and output data
 
-The application displays:
+---
+
+## 4. View the results
+
+After the simulation is complete, the application displays:
 
 - Sensor preview table
 - Relative humidity comparison plot
 - Degradation by scenario plot
-- Output JSON summary
+- JSON output summary
+
+---
+
+## Typical workflow
+
+```text
+Select parameters → Load data → Run simulation → Review results → Export JSON
